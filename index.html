@@ -1,1 +1,103 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><meta name="theme-color" content="#000000"/><link rel="manifest" href="/manifest.json"/><title>Kata App</title><link href="/static/css/main.9976882d.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={1:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.0fddd070.chunk.js"></script><script src="/static/js/main.faf9d150.chunk.js"></script></body></html>
+<head>
+</head>
+<body>
+
+<div>
+    <div id="opening" style="display: none;">
+        <h1>Bezelye Kelime Anlami, Tarihcesi ve Okunusu</h1>
+        <p>Bezelye kelimesi aslinda gunumuze bez-eyle kelimesinin degisim gecirmesiyle gelmistir. Peki nedir bez-eyle ve nasil bir degisimden gecmistir?</p>
+        <p>M.O. (Misirdan once - yenilen misir olan misir) 500 yilinda, Gokturklerin de kokenlerinin onlara dayandigi iddia edilen Nilufer kabilesi varmis.</p>
+        <p>Bu kabile yerleske olarak Guneydogu Cin'i secmis. Guneydogu Cin yazlari sicak ve kurak, kislari ise soguk ve gokgurultulu yagisli bir iklim ortusune sahiptir.</p>
+        <p>Cetin hava sartlarindan dolayi Nilufer kabilesi cok zorlu sartlarda kendilerini gelistirmis. Cok soguk ve kurak gecen bir kis, tam 20 gun disari cikamadiklari olmus.</p>
+        <p>Evde otura otura sikilmislar ve evlerini sikintidan devamli temizlemeye baslamislar bu 20 gun. 20 gunun sonunda tum kabile bir toplanti duzenlemis ve birbirlerine kendi deneyimlerini aktarmis.</p>
+        <p>Gorulen su olmus: herkes evini ne kadar dip kose ve iyi temizledigini anlatmis. Bir kisi haric, Nilufer kabile balik sorumlusu Sit, yemek canaklarini nasil parlattigini da anlatmis.</p>
+        <p>Bunu oteki kabile uyelerinin hicbiri yapmamis ve aksam eve donup canaklarini temizlemeye koyulmuslar. Kimse parlatamayinca ertesi gun Sit'e sirrini sormuslar.</p>
+        <button style="border: 1px solid black; padding: 20px; background-color: red;" onclick={secretClick()}>Sit'in sirrini gormek icin tikla</button>
+    </div>
+
+    <div id="secretOfSit" style="display: none;">
+        <p>Koyden 300 metre otede yerde yesil tanecikler gorup bunlari topla.</p>
+        <p>Tanecikleri suyun icine dok ve iyice kaynat.</p>
+        <p>Yumusayince onlari ez ve sonra kurut.</p>
+        <p>Olusan madde ile canaklari sil.</p>
+        <button style="border: 1px solid black; padding: 20px; background-color: blue;" onclick={continueStory()}>Hikayeye devam</button>
+    </div>
+
+    <div id="restOfStory" style="display: none;">
+        <p>Sit bu yontem ile canaklarini parlatmis. Bu yontem agizdan agiza dolasmaya baslamis ama kimse bu yesil maddeye bir isim verememis.</p>
+        <p>Halk kendi arasinda bu yonteme isim vermek icin bir anket yapmis. Bu anket ileride kullanilacak bir suru baska isim icin de koken olmustur.</p>
+        <button style="border: 1px solid black; padding: 20px; background-color: green;" onclick={seeSurvey()}>Anketi gormek icin tikla</button>
+    </div>
+
+    <div id="survey" style="display: none;">
+        <ul>
+            <li>Bez-eyle</li>
+            <li>Cam-sil</li>
+            <li>Agda-bandi</li>
+            <li>Suspansiyon</li>
+            <li>Topcam</li>
+        </ul>
+
+    <p>Anket sonuclarindan da goruldugu uzere en cok bez-eyle sevilmis. Onceden bu yapilan beze verilen isim olmus bez-eyle ama daha sonrasinda yazinin da icadiyla sebzeye verilen isme donusmus.</p>
+    <p>Her 50 yilda azicik degiserek gunumuzdeki halini almistir.</p>
+    <h2>Okunusu</h2>
+    <p>Sit hicbir zaman e'leri kapali soylememis. Tarihi korumak adina biz de acik e kullaniyoruz, cogumuz.</p>
+        <button onclick="seeFacts()">Hikayeye inanmadim, fact check yapmak istiyorum diyorsan tikla.</button>
+    </div>
+
+
+    <div id="facts" style="display: none;">
+        <ul>
+            <li><button onclick={youAreRight()}>Nilufer kabilesi</button></li>
+            <li><button onclick={misirSpecial()}>M.O.</button></li>
+            <li><button onclick={southChina()}>Guneydogu Cin</button></li>
+        </ul>
+    </div>
+
+
+
+</div>
+
+<div>
+
+</div>
+<script>
+
+    var letIn = prompt("What is the password");
+
+    if (letIn === "GizeminDedigiGibi"){
+        document.getElementById("opening").style.display = "inline";
+    }
+
+    function secretClick(){
+        document.getElementById("secretOfSit").style.display = "inline";
+    }
+
+    function continueStory(){
+        document.getElementById("restOfStory").style.display = "inline";
+    }
+
+    function seeSurvey(){
+        document.getElementById("survey").style.display = "inline";
+    }
+
+    function seeFacts(){
+        document.getElementById("facts").style.display = "inline";
+    }
+
+    function youAreRight(){
+        alert("Evet boyle bir sey var.");
+    }
+
+    function misirSpecial(){
+        alert("Misirin icadindan sonra demektir. Gercekten de bu sekilde kullanilir.");
+    }
+
+    function southChina(){
+        alert("Soguk bir yer, sen bir de kuzeyini gor.");
+    }
+
+
+</script>
+
+</body>
