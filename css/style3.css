@@ -264,7 +264,7 @@ body {
  */
 .paper-plane-container .clouds {
     position: absolute;
-    top: 1800px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -3129,12 +3129,9 @@ body {
 }
 
 
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic);
-
 .cake-container {
-    width: 100%;
     height: 100vh;
-    background: #ee9ca7;
+    background-color: #ee9ca7;
 }
 
 
