@@ -19,7 +19,10 @@
 /* Other stuff */
 body {
   background: #000;
-  color: #fff; }
+  color: #fff;
+    text-align: center
+;
+}
 
 .greeting-container {
   width: 100vw;
